@@ -18,14 +18,14 @@ export default async function (hre: HardhatRuntimeEnvironment) {
   const artifact = await deployer.loadArtifact("Greeter");
 
   // Deposit some funds to L2 in order to be able to perform L2 transactions.
-  const depositAmount = ethers.utils.parseEther("0.001");
-  const depositHandle = await deployer.zkWallet.deposit({
-    to: deployer.zkWallet.address,
-    token: utils.ETH_ADDRESS,
-    amount: depositAmount,
-  });
-  // Wait until the deposit is processed on zkSync
-  await depositHandle.wait();
+//   const depositAmount = ethers.utils.parseEther("0.001");
+//   const depositHandle = await deployer.zkWallet.deposit({
+//     to: deployer.zkWallet.address,
+//     token: utils.ETH_ADDRESS,
+//     amount: depositAmount,
+//   });
+//   // Wait until the deposit is processed on zkSync
+//   await depositHandle.wait();
 
   // Deploy this contract. The returned object will be of a `Contract` type, similarly to ones in `ethers`.
   // `greeting` is an argument for contract constructor.
