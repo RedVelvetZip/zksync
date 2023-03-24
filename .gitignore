@@ -106,3 +106,4 @@ dist
 #Hardhat files
 backend/cache-zk
 backend/artifacts-zk
+.secret
