@@ -4,6 +4,8 @@
     "@ethersproject/web": "^5.7.1",
     "@matterlabs/hardhat-zksync-deploy": "^0.6.3",
     "@matterlabs/hardhat-zksync-solc": "^0.3.14",
+    "@matterlabs/hardhat-zksync-verify": "^0.1.4",
+    "@nomiclabs/hardhat-etherscan": "^3.1.2",
     "@types/node": "^18.15.7",
     "ethers": "^5.7.2",
     "hardhat": "^2.13.0",

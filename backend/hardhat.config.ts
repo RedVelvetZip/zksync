@@ -1,5 +1,6 @@
 import "@matterlabs/hardhat-zksync-deploy";
 import "@matterlabs/hardhat-zksync-solc";
+import "@matterlabs/hardhat-zksync-verify";
 
 module.exports = {
   zksolc: {
@@ -13,6 +14,7 @@ module.exports = {
         url: "https://mainnet.era.zksync.io", // URL of the zkSync network RPC
         ethNetwork: "main",
         zksync: true,
+        verifyURL: 'https://zksync2-mainnet-explorer.zksync.io/contract_verification'
     },
     zkTestnet: {
         url: "https://zksync2-testnet.zksync.dev", // URL of the zkSync network RPC
